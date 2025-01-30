@@ -101,6 +101,10 @@
             this.label19 = new System.Windows.Forms.Label();
             this.pnlAboutUs = new System.Windows.Forms.Panel();
             this.label20 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.picClose = new System.Windows.Forms.PictureBox();
+            this.picMinimize = new System.Windows.Forms.PictureBox();
+            this.picMaximize = new System.Windows.Forms.PictureBox();
             this.pnlLeftSide.SuspendLayout();
             this.pnlFoods.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -125,11 +129,18 @@
             this.panel19.SuspendLayout();
             this.pnlCart.SuspendLayout();
             this.pnlAboutUs.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picClose)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picMinimize)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picMaximize)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlLeftSide
             // 
             this.pnlLeftSide.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(17)))), ((int)(((byte)(23)))));
+            this.pnlLeftSide.Controls.Add(this.picClose);
+            this.pnlLeftSide.Controls.Add(this.picMinimize);
+            this.pnlLeftSide.Controls.Add(this.picMaximize);
+            this.pnlLeftSide.Controls.Add(this.label21);
             this.pnlLeftSide.Controls.Add(this.pnlOnButtonAboutUs);
             this.pnlLeftSide.Controls.Add(this.btnAboutUs);
             this.pnlLeftSide.Controls.Add(this.pnlOnButtonPuddings);
@@ -158,7 +169,7 @@
             // pnlOnButtonFood
             // 
             this.pnlOnButtonFood.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.pnlOnButtonFood.Location = new System.Drawing.Point(0, 55);
+            this.pnlOnButtonFood.Location = new System.Drawing.Point(0, 86);
             this.pnlOnButtonFood.Name = "pnlOnButtonFood";
             this.pnlOnButtonFood.Size = new System.Drawing.Size(10, 37);
             this.pnlOnButtonFood.TabIndex = 2;
@@ -166,7 +177,7 @@
             // pnlOnButtonDrinks
             // 
             this.pnlOnButtonDrinks.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.pnlOnButtonDrinks.Location = new System.Drawing.Point(-2, 111);
+            this.pnlOnButtonDrinks.Location = new System.Drawing.Point(-2, 142);
             this.pnlOnButtonDrinks.Name = "pnlOnButtonDrinks";
             this.pnlOnButtonDrinks.Size = new System.Drawing.Size(10, 37);
             this.pnlOnButtonDrinks.TabIndex = 4;
@@ -174,7 +185,7 @@
             // pnlOnButtonMyCart
             // 
             this.pnlOnButtonMyCart.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.pnlOnButtonMyCart.Location = new System.Drawing.Point(0, 217);
+            this.pnlOnButtonMyCart.Location = new System.Drawing.Point(0, 248);
             this.pnlOnButtonMyCart.Name = "pnlOnButtonMyCart";
             this.pnlOnButtonMyCart.Size = new System.Drawing.Size(10, 37);
             this.pnlOnButtonMyCart.TabIndex = 6;
@@ -182,7 +193,7 @@
             // pnlOnButtonPuddings
             // 
             this.pnlOnButtonPuddings.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.pnlOnButtonPuddings.Location = new System.Drawing.Point(-2, 163);
+            this.pnlOnButtonPuddings.Location = new System.Drawing.Point(-2, 194);
             this.pnlOnButtonPuddings.Name = "pnlOnButtonPuddings";
             this.pnlOnButtonPuddings.Size = new System.Drawing.Size(10, 37);
             this.pnlOnButtonPuddings.TabIndex = 8;
@@ -190,7 +201,7 @@
             // pnlOnButtonAboutUs
             // 
             this.pnlOnButtonAboutUs.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.pnlOnButtonAboutUs.Location = new System.Drawing.Point(-2, 270);
+            this.pnlOnButtonAboutUs.Location = new System.Drawing.Point(-2, 301);
             this.pnlOnButtonAboutUs.Name = "pnlOnButtonAboutUs";
             this.pnlOnButtonAboutUs.Size = new System.Drawing.Size(10, 37);
             this.pnlOnButtonAboutUs.TabIndex = 10;
@@ -314,7 +325,7 @@
             this.btnAboutUs.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAboutUs.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.btnAboutUs.Image = global::Food_Application.Properties.Resources.aboutus;
-            this.btnAboutUs.Location = new System.Drawing.Point(0, 270);
+            this.btnAboutUs.Location = new System.Drawing.Point(0, 301);
             this.btnAboutUs.Name = "btnAboutUs";
             this.btnAboutUs.Size = new System.Drawing.Size(197, 37);
             this.btnAboutUs.TabIndex = 9;
@@ -329,7 +340,7 @@
             this.btnPuddings.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPuddings.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.btnPuddings.Image = global::Food_Application.Properties.Resources.desert;
-            this.btnPuddings.Location = new System.Drawing.Point(0, 163);
+            this.btnPuddings.Location = new System.Drawing.Point(0, 194);
             this.btnPuddings.Name = "btnPuddings";
             this.btnPuddings.Size = new System.Drawing.Size(197, 37);
             this.btnPuddings.TabIndex = 7;
@@ -344,7 +355,7 @@
             this.btnMyCart.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMyCart.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.btnMyCart.Image = global::Food_Application.Properties.Resources.cart;
-            this.btnMyCart.Location = new System.Drawing.Point(2, 217);
+            this.btnMyCart.Location = new System.Drawing.Point(2, 248);
             this.btnMyCart.Name = "btnMyCart";
             this.btnMyCart.Size = new System.Drawing.Size(197, 37);
             this.btnMyCart.TabIndex = 5;
@@ -359,7 +370,7 @@
             this.btnDrinks.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDrinks.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.btnDrinks.Image = global::Food_Application.Properties.Resources.drinks;
-            this.btnDrinks.Location = new System.Drawing.Point(0, 111);
+            this.btnDrinks.Location = new System.Drawing.Point(0, 142);
             this.btnDrinks.Name = "btnDrinks";
             this.btnDrinks.Size = new System.Drawing.Size(197, 37);
             this.btnDrinks.TabIndex = 3;
@@ -374,13 +385,14 @@
             this.btnFoods.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFoods.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.btnFoods.Image = global::Food_Application.Properties.Resources.curry;
-            this.btnFoods.Location = new System.Drawing.Point(2, 55);
+            this.btnFoods.Location = new System.Drawing.Point(2, 86);
             this.btnFoods.Name = "btnFoods";
             this.btnFoods.Size = new System.Drawing.Size(197, 37);
             this.btnFoods.TabIndex = 0;
             this.btnFoods.Text = "  Foods";
             this.btnFoods.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnFoods.UseVisualStyleBackColor = true;
+            this.btnFoods.Click += new System.EventHandler(this.btnFoods_Click);
             // 
             // panel4
             // 
@@ -935,20 +947,61 @@
             this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label20.Location = new System.Drawing.Point(315, 43);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(86, 20);
+            this.label20.Size = new System.Drawing.Size(88, 20);
             this.label20.TabIndex = 0;
-            this.label20.Text = "About Us";
+            this.label20.Text = "About Me";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Myanmar Text", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.ForeColor = System.Drawing.SystemColors.Window;
+            this.label21.Location = new System.Drawing.Point(36, 21);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(130, 43);
+            this.label21.TabIndex = 11;
+            this.label21.Text = "Food App";
+            // 
+            // picClose
+            // 
+            this.picClose.BackgroundImage = global::Food_Application.Properties.Resources.desert;
+            this.picClose.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.picClose.Location = new System.Drawing.Point(2, 0);
+            this.picClose.Name = "picClose";
+            this.picClose.Size = new System.Drawing.Size(28, 21);
+            this.picClose.TabIndex = 12;
+            this.picClose.TabStop = false;
+            // 
+            // picMinimize
+            // 
+            this.picMinimize.BackgroundImage = global::Food_Application.Properties.Resources.dish;
+            this.picMinimize.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.picMinimize.Location = new System.Drawing.Point(36, 0);
+            this.picMinimize.Name = "picMinimize";
+            this.picMinimize.Size = new System.Drawing.Size(28, 21);
+            this.picMinimize.TabIndex = 13;
+            this.picMinimize.TabStop = false;
+            // 
+            // picMaximize
+            // 
+            this.picMaximize.BackgroundImage = global::Food_Application.Properties.Resources.cart;
+            this.picMaximize.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.picMaximize.Location = new System.Drawing.Point(68, 0);
+            this.picMaximize.Name = "picMaximize";
+            this.picMaximize.Size = new System.Drawing.Size(28, 21);
+            this.picMaximize.TabIndex = 14;
+            this.picMaximize.TabStop = false;
             // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(910, 513);
-            this.Controls.Add(this.pnlAboutUs);
-            this.Controls.Add(this.pnlCart);
-            this.Controls.Add(this.pnlDesert);
-            this.Controls.Add(this.pnlDrinks);
             this.Controls.Add(this.pnlFoods);
+            this.Controls.Add(this.pnlDrinks);
+            this.Controls.Add(this.pnlDesert);
+            this.Controls.Add(this.pnlCart);
+            this.Controls.Add(this.pnlAboutUs);
             this.Controls.Add(this.pnlTop);
             this.Controls.Add(this.pnlLeftSide);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -956,6 +1009,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.pnlLeftSide.ResumeLayout(false);
+            this.pnlLeftSide.PerformLayout();
             this.pnlFoods.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -999,6 +1053,9 @@
             this.pnlCart.PerformLayout();
             this.pnlAboutUs.ResumeLayout(false);
             this.pnlAboutUs.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picClose)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picMinimize)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picMaximize)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1078,6 +1135,10 @@
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Panel pnlAboutUs;
         private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.PictureBox picClose;
+        private System.Windows.Forms.PictureBox picMinimize;
+        private System.Windows.Forms.PictureBox picMaximize;
     }
 }
 

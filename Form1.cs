@@ -16,5 +16,10 @@ namespace Food_Application
         {
             InitializeComponent();
         }
+
+        private void btnFoods_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
